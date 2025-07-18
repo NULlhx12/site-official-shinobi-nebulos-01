@@ -1,0 +1,172 @@
+{
+  "kekkei_genkai": {
+    "name": "Gale Style",
+    "japanese_name": "Geppuu-ton",
+    "description": "A rare wind-based Kekkei Genkai that allows the user to manipulate high-speed wind currents and create devastating gale-force attacks.",
+    "rarity": "legendary",
+    "clan_exclusive": false,
+    "chakra_nature": ["wind"],
+    "activation_requirements": {
+      "chakra_control": 80,
+      "wind_affinity": 90,
+      "level": 50
+    },
+    "visual_effects": {
+      "eye_color": "#00FFFF",
+      "aura_color": "#87CEEB",
+      "particle_effect": "wind_spiral"
+    }
+  },
+
+  "jutsus": [
+    {
+      "name": "Gale Burst",
+      "japanese_name": "Geppuu Bakuhatsu",
+      "rank": "C",
+      "chakra_cost": 150,
+      "cooldown": 8,
+      "range": 15,
+      "description": "Creates a sudden burst of wind that knocks back enemies and deals moderate damage.",
+      "effects": {
+        "damage": 120,
+        "knockback": 3,
+        "area_of_effect": 5
+      },
+      "hand_signs": ["Ram", "Bird", "Snake"]
+    },
+
+    {
+      "name": "Tornado Drill",
+      "japanese_name": "Tatsumaki Doriru",
+      "rank": "B",
+      "chakra_cost": 250,
+      "cooldown": 15,
+      "range": 20,
+      "description": "Creates a spinning tornado that moves forward, dealing continuous damage to enemies in its path.",
+      "effects": {
+        "damage": 80,
+        "duration": 6,
+        "speed": 2,
+        "piercing": true
+      },
+      "hand_signs": ["Tiger", "Dragon", "Bird", "Ram"]
+    },
+
+    {
+      "name": "Gale Barrier",
+      "japanese_name": "Geppuu Kekkai",
+      "rank": "B",
+      "chakra_cost": 200,
+      "cooldown": 20,
+      "range": 0,
+      "description": "Creates a protective wind barrier that deflects projectiles and reduces incoming damage.",
+      "effects": {
+        "damage_reduction": 60,
+        "duration": 10,
+        "projectile_deflection": true,
+        "radius": 3
+      },
+      "hand_signs": ["Snake", "Ram", "Tiger"]
+    },
+
+    {
+      "name": "Hurricane Devastation",
+      "japanese_name": "Harikeen Kaimetsu",
+      "rank": "A",
+      "chakra_cost": 400,
+      "cooldown": 30,
+      "range": 25,
+      "description": "Summons a massive hurricane that devastates a large area, dealing heavy damage and creating chaos.",
+      "effects": {
+        "damage": 300,
+        "area_of_effect": 12,
+        "duration": 8,
+        "blindness": 5,
+        "slowness": 3
+      },
+      "hand_signs": ["Dragon", "Tiger", "Bird", "Snake", "Ram", "Monkey"]
+    },
+
+    {
+      "name": "Wind Walk",
+      "japanese_name": "Kaze Aruki",
+      "rank": "C",
+      "chakra_cost": 100,
+      "cooldown": 12,
+      "range": 0,
+      "description": "Allows the user to move at incredible speed by riding wind currents.",
+      "effects": {
+        "speed_boost": 200,
+        "duration": 8,
+        "invisibility": 2,
+        "no_fall_damage": true
+      },
+      "hand_signs": ["Bird", "Ram"]
+    },
+
+    {
+      "name": "Gale Blade Technique",
+      "japanese_name": "Geppuu Yaiba no Jutsu",
+      "rank": "A",
+      "chakra_cost": 350,
+      "cooldown": 25,
+      "range": 30,
+      "description": "Creates multiple wind blades that slice through enemies with extreme precision and speed.",
+      "effects": {
+        "damage": 180,
+        "projectile_count": 8,
+        "piercing": true,
+        "bleeding": 4
+      },
+      "hand_signs": ["Tiger", "Dragon", "Bird", "Snake", "Tiger"]
+    }
+  ],
+
+  "passive_abilities": [
+    {
+      "name": "Wind Affinity",
+      "description": "All wind-based jutsus cost 20% less chakra and deal 15% more damage.",
+      "effects": {
+        "chakra_reduction": 20,
+        "wind_damage_boost": 15
+      }
+    },
+    {
+      "name": "Gale Sense",
+      "description": "Can detect enemies within a 20-block radius through air currents.",
+      "effects": {
+        "detection_range": 20,
+        "see_through_walls": true
+      }
+    },
+    {
+      "name": "Wind Resistance",
+      "description": "Takes 50% less damage from wind-based attacks and is immune to knockback.",
+      "effects": {
+        "wind_resistance": 50,
+        "knockback_immunity": true
+      }
+    }
+  ],
+
+  "awakening_form": {
+    "name": "Tempest Lord",
+    "japanese_name": "Arashi no Kami",
+    "description": "The ultimate form of Gale Style, transforming the user into a master of all winds.",
+    "activation_cost": 500,
+    "duration": 30,
+    "cooldown": 300,
+    "effects": {
+      "damage_boost": 100,
+      "speed_boost": 150,
+      "chakra_regeneration": 50,
+      "flight": true,
+      "aura_damage": 20
+    },
+    "visual_changes": {
+      "glowing_eyes": true,
+      "wind_aura": true,
+      "floating_particles": "cyan_wind"
+    }
+  }
+}
